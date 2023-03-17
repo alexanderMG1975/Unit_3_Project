@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Unit 3 Project</title>
+</head>
+<body>
+    <header>Main Header</header>
+    <div>
+        <h1 id="newsletter_heading_id">Sign up for our newsletter!</legend>
+        <p id="newsletter_heading_p">Get the latest news on how your code is doing right in your inbox</p>
+    </div>
+
+    <hr>
+
+    <div id="main-content-div" >
+        <form id="main-content-form" method="post" action="#0">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="user-full-name">Full Name</label>
+                <input required type="text" id="user-full-name" name="userfullname" placeholder="Required">
+                <label for="user-email-address">Email Address</label>
+                <input required type="text" id="user-email-address" name="useremailaddress" placeholder="Required">               
+                <label for="user-phone-number">Phone</label>
+                <input required type="text" id="user-phone-number" name="userphonenumber" placeholder="Required">
+                <label for="user-street-address">Street Address</label>
+                <input required type="text" id="user-street-address" name="userstreetaddress" placeholder="Required">
+                <label for="user-city">City</label>
+                <input required type="text" id="user-city" name="usercity" placeholder="Required">
+                <label for="state-select-menu" id="state_id">State</label>
+                <select id="state-select-menu" name="stateselectmenu" required>
+                    <option value="" id="select-placeholder" disabled selected>Choose State</option>
+                    <optgroup label="Select State of Residence">
+                    <option value="None applicable">N/A</option>
+                    <option value="CA">California</option>
+                    <option value="OR">Oregon</option>
+                    <option value="WA">Washington</option>
+                    <option value="NY">New York</option>
+                    </optgroup>
+                </select>
+                <label for="user-zip-code" id="zip_code_id">Zip Code</label>
+                <input required type="text" id="user-zip-code" name="userzipcode" placeholder="Required">
+            </fieldset>
+            <button type="submit" id="submit-button">Sign Up</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <div id="second-content-div">
+        <form id="second-content-form">
+            <fieldset>
+                <legend>Newsletter</legend>
+                <p>Select the newsletters you would like to receive</p>
+                <!--checklist here-->
+                <ul>
+                    <li>
+                    <input type="checkbox" id="newsletter-checklist" value="newsletter_checklist" name="newsletterchecklist">
+                    <label for="newsletter-checklist">HTML News</label>
+                    </li>
+                    <li>
+                    <input type="checkbox" id="newsletter-checklist1" value="newsletter_checklist1" name="newsletterchecklist">
+                    <label for="newsletter-checklist1">CSS News</label>
+                    </li>
+                    <li>
+                    <input type="checkbox" id="newsletter-checklist2" value="newsletter_checklist2" name="newsletterchecklist">
+                    <label for="newsletter-checklist2">Javascipt News</label>
+                    </li>
+                </ul>
+                <!--radio list here-->
+                <p>Newsletter format</p>
+                <input type="radio" id="html_option" value="html_option" name="radio_menu">
+                <label for="html_option">HTML News</label>
+                <br>
+                <input type="radio" id="plain_text_option" value="plain_text_option" name="radio_menu">
+                <label for="plain_text_option">Plain Text</label>
+                <!--Plain Text Area (textarea)-->
+                <ul>
+                <li>
+                <label for="enter_text">Other topics you would like to hear about</label>
+                </li>
+                <li>
+                <textarea id="enter_text" name="entertext" placeholder="Required"></textarea>
+                </li>
+                </ul>
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- The following is the submit button -->
+    <div id="third-content-form">
+        <!-- <button type="submit" id="submit-button">Sign Up</button> -->
+    </div>
+
+    <footer>
+        <p>Copyright The Code Review</p>
+    </footer>
+</body>
+</html>

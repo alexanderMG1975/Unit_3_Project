@@ -1,0 +1,194 @@
+html,body{
+    margin:0px;
+    padding:0px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+*{
+    box-sizing:border-box;
+}
+header{
+    color:lightgray;
+    font-size:2.5rem;
+    background:darkblue;
+    /* border: 1px solid red; */
+    text-align:center;
+    padding-top: 3vh;
+    padding-bottom:3vh;
+}
+/*Here starts the first form*/
+#newsletter_heading_id{
+    color:red;
+    text-align:center;
+}
+#newsletter_heading_p{
+    font-size:1.1rem;
+    text-align:center;
+}
+#main-content-div{
+    margin-bottom:30px;
+    background-color:lightblue;
+}
+#main-content-form{
+    margin-top:25px;
+    height:450px;
+}
+fieldset{
+    border:none;
+}
+legend{
+    font-size:1.8rem;
+    padding:0px;
+    /* margin-left:10px; */
+}
+#main-content-form fieldset label {
+    display: block; 
+    margin-top:10px;
+    margin-bottom:5px;
+}
+#main-content-form fieldset input:not(#user-zip-code){
+    width:100%;
+}
+input::placeholder{
+    text-align:right;
+}
+textarea::placeholder{
+    text-align:right;
+}
+#state_id{
+    margin-top:20px;
+}
+#state-select-menu{
+    display:block;
+}
+/* option{
+    color:#666;
+} */
+select:required:invalid{
+    color:#666;
+}
+option[value=""][disabled]{
+    display:none;
+}
+#user-zip-code{
+    width:50%;
+}
+/* Here starts the second form */
+#second-content-div{
+    background-color:paleturquoise;
+}
+#second-content-form{
+    height:400px;
+}
+ul{
+    list-style-type: none;
+    padding:0px;
+}
+textarea{
+    width:100%;
+}
+#third-content-form{
+    position: relative;
+    height:5vh;
+}
+/* Here starts the third form */
+button{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* -ms-transform: translate(-10%, -50%); */
+    transform: translate(-50%, -50%);
+    /* transform: skew(30deg, 20deg); */
+    background-color:lightblue;
+}
+footer p{
+    text-align:center;
+}
+
+/*:focus for the text area and other input fields, and transition*/
+input:focus, textarea:focus, select:focus, button:focus{
+    background-color:lightyellow;
+}    
+input[type="text"]{
+    transition-property: background ;
+    transition-duration:1s;
+    transition-delay:0s;
+    transition-timing-function:ease-in-out;
+}
+input[type="text"]:focus{
+    background-color:lightgreen;
+}
+
+/*Here I change the position of the button*/
+#main-content-form{
+    position:relative;
+    border: 1px solid yellow;
+}
+#main-content-form > button{
+    position:absolute;
+    top:930px;
+    left:50%;
+    width:100%;
+    padding-top:15px;
+    padding-bottom:15px;
+    font-size:1.3rem;
+    background-color:springgreen;
+}
+
+/*FOOTER*/
+footer{
+    margin-top:50px;
+}
+
+
+@media screen and (min-width:768px){
+    
+    #main-content-div{
+        padding-left:15%;
+        padding-right:15%;
+    }
+    #main-content-form{
+        height:320px;
+    }
+    #main-content-form fieldset label{
+        display:inline-block;
+        width:25%;
+    }
+    #main-content-form fieldset input:not(#user-zip-code){
+        display:inline-block;
+        width:74%;
+    }
+    #main-content-form fieldset #state-select-menu{
+        display:inline-block;
+        width:74%;
+
+    }
+    #main-content-form fieldset #zip_code_id{
+        display:inline-block;
+        width:25%;
+    }
+    #main-content-form fieldset #user-zip-code{
+        display:inline-block;
+        width:28%;
+    }
+    /* #main-content-form fieldset label{
+        color:olivedrab;
+        border: 1px solid red;
+    } */
+
+    #second-content-div{
+        padding-left:15%;
+        padding-right:15%;
+    }
+    #second-content-form{
+        height:350px;
+    }
+
+    /* positioning of the button */
+    #main-content-form > button{
+        position:absolute;
+        top:750px;
+        left:50%;
+    }
+
+}
