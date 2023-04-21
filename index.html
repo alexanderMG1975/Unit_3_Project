@@ -21,7 +21,7 @@
 
     <div id="main-content-div" >
         <form id="main-content-form" method="post" action="#0">
-            <fieldset>
+            <fieldset id="first_field_set">
                 <legend>Contact Information</legend>
                 <label for="user-full-name">Full Name</label>
                 <input required type="text" id="user-full-name" name="userfullname" placeholder="Required">
@@ -47,56 +47,58 @@
                 <label for="user-zip-code" id="zip_code_id">Zip Code</label>
                 <input required type="text" id="user-zip-code" name="userzipcode" placeholder="Required">
             </fieldset>
-            <button type="submit" id="submit-button">Sign Up</button>
-        </form>
-    </div>
-
+            <!-- <button type="submit" id="submit-button">Sign Up</button> -->
+       
+    <!-- </div> -->
     <hr>
-
-    <div id="second-content-div">
-        <form id="second-content-form">
-            <fieldset>
-                <legend>Newsletter</legend>
+    <!-- <div id="second-content-div"> -->
+       
+            <fieldset id="second_field_set">
+                <legend id="second_legend">Newsletter</legend>
                 <p>Select the newsletters you would like to receive</p>
                 <!--checklist here-->
-                <ul>
-                    <li>
+                <ul id="checkbox-list">
+                    <li class="checkbox-wrapper">
                     <input type="checkbox" id="newsletter-checklist" value="newsletter_checklist" name="newsletterchecklist">
                     <label for="newsletter-checklist">HTML News</label>
                     </li>
-                    <li>
+                    <li class="checkbox-wrapper">
                     <input type="checkbox" id="newsletter-checklist1" value="newsletter_checklist1" name="newsletterchecklist">
                     <label for="newsletter-checklist1">CSS News</label>
                     </li>
-                    <li>
+                    <li class="checkbox-wrapper">
                     <input type="checkbox" id="newsletter-checklist2" value="newsletter_checklist2" name="newsletterchecklist">
                     <label for="newsletter-checklist2">Javascipt News</label>
                     </li>
                 </ul>
                 <!--radio list here-->
                 <p>Newsletter format</p>
+                <div class="radio-display-wrapper">
                 <input type="radio" id="html_option" value="html_option" name="radio_menu">
                 <label for="html_option">HTML News</label>
+                </div>
                 <br>
+                <div class="radio-display-wrapper">
                 <input type="radio" id="plain_text_option" value="plain_text_option" name="radio_menu">
                 <label for="plain_text_option">Plain Text</label>
+                </div>
                 <!--Plain Text Area (textarea)-->
                 <ul>
-                <li>
-                <label for="enter_text">Other topics you would like to hear about</label>
-                </li>
-                <li>
-                <textarea id="enter_text" name="entertext" placeholder="Required"></textarea>
-                </li>
+                    <li>
+                    <label for="enter_text">Other topics you would like to hear about</label>
+                    </li>
+                    <li>
+                    <textarea id="enter_text" name="entertext" placeholder="Required"></textarea>
+                    </li>
                 </ul>
             </fieldset>
         </form>
     </div>
 
     <!-- The following is the submit button -->
-    <div id="third-content-form">
-        <!-- <button type="submit" id="submit-button">Sign Up</button> -->
-    </div>
+    <!-- <div id="third-content-form"> -->
+    <button type="submit" id="submit-button">Sign Up</button>
+    <!-- </div> -->
 
     <footer>
         <p>Copyright The Code Review</p>
