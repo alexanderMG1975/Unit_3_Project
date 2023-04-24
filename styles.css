@@ -199,12 +199,37 @@ footer{
 
     }
 
+    #first_field_set label{
+        flex-basis:20%;
+    }
+    #first_field_set input:not(#user-zip-code){
+        margin-top:5px;
+        margin-bottom:5px;
+        flex-basis:79%;
+    }
+    #state-select-menu{
+        margin-top:5px;
+        margin-bottom:5px; 
+        flex-basis:79%;
+    }
+    #user-zip-code{
+        margin-top:5px;
+        margin-bottom:5px;
+        flex-basis:25%;
+    }
+
+
     .checkbox-wrapper{
         display:flex;
         align-items:center;
         margin-right:100px;
         /* border:1px solid red; */
         width:100%;
+    }
+
+
+    #user-zip-code{
+        width:25%;
     }
 
 }
