@@ -157,7 +157,7 @@ input[type="text"]{
     transition-timing-function:ease-in-out;
 }
 input[type="text"]:focus{
-    background-color:lightgreen;
+    background-color:lightyellow;
 }
 
 /*Here I change the position of the button*/
@@ -200,19 +200,20 @@ footer{
     }
 
     #first_field_set label{
-        flex-basis:20%;
+        flex-basis:23%;
     }
     #first_field_set input:not(#user-zip-code){
         margin-top:5px;
         margin-bottom:5px;
-        flex-basis:79%;
+        flex-basis:75%;
     }
     #state-select-menu{
         margin-top:5px;
         margin-bottom:5px; 
-        flex-basis:79%;
+        flex-basis:75%;
     }
     #user-zip-code{
+       
         margin-top:5px;
         margin-bottom:5px;
         flex-basis:25%;
